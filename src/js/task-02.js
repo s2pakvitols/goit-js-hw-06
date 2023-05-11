@@ -12,8 +12,9 @@ ingredients.forEach((element) => {
   newElementEl.textContent = element;
   newElementEl.className = "item";
   const refIngredientsEl = document.querySelector("#ingredients");
-
+ 
   refIngredientsEl.append(newElementEl);
 });
 
-/*не можу зрозуміти, як додати елементи за один раз */
+/*не можу зрозуміти, як додати елементи 
+за одну операцію додавання. */
