@@ -1,7 +1,9 @@
 "use strict"
 
 const listItemEl = categories.querySelectorAll(".item");
-let numOfCategories = 0;
+let numOfCategories = listItemEl.length;
+console.log("Number of categories: ", numOfCategories);
+console.log("\n");
 
 listItemEl
     .forEach((element) => {
@@ -14,7 +16,6 @@ listItemEl
         const longOflist = listOfEl.length;
         console.log("Elements: ", longOflist);
         console.log('\n');
-         numOfCategories ++ ;
 });
 
-console.log("Number of categories:", numOfCategories);
+
