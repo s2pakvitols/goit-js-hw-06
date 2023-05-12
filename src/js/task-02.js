@@ -7,14 +7,17 @@ const ingredients = [
   "Condiments",
 ];
 
-ingredients.forEach((element) => {
+const refIngredientsEl = document.querySelector("#ingredients");
+
+const elementsArrey = ingredients.map((element) => {
   const newElementEl = document.createElement("li");
   newElementEl.textContent = element;
   newElementEl.className = "item";
-  const refIngredientsEl = document.querySelector("#ingredients");
- 
-  refIngredientsEl.append(newElementEl);
-});
+  return newElementEl;
+  
+}); 
 
-/*не можу зрозуміти, як додати елементи 
-за одну операцію додавання. */
+
+refIngredientsEl.append(...elementsArrey);
+
+

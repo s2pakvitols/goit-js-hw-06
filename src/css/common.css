@@ -32,6 +32,5 @@ button {
   display: flex;
   border: 10px solid rgb(134, 126, 126);
   border-radius: 10px;
-  box-sizing: border-box;
   background-color: #212121 ba;
 }
