@@ -26,11 +26,17 @@ button {
 .gallery {
   display: flex;
   gap: 20px;
+  list-style: none;
+ 
+    
+
 }
 
 .gallery-item {
   display: flex;
-  border: 10px solid rgb(134, 126, 126);
-  border-radius: 10px;
-  background-color: #212121 ba;
+  background-color: #212121 ;
+}
+
+.image-gallerry {
+
 }
