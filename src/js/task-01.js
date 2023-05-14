@@ -7,14 +7,13 @@ console.log("\n");
 
 listItemEl
     .forEach((element) => {
-        const categoryH2El = element.querySelector("h2");
+        const categoryH2El = element.firstElementChild;
         const textH2 = categoryH2El.textContent;
         console.log("Category: ", textH2);
 
-        const listOfEl= element.querySelectorAll("li")
-        
-        const longOflist = listOfEl.length;
-        console.log("Elements: ", longOflist);
+        const listOfEl = element.lastElementChild;
+        const longOflist = listOfEl.children;
+        console.log("Elements: ", longOflist.length);
         console.log('\n');
 });
 

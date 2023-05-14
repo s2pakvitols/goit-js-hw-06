@@ -5,8 +5,7 @@ const bodyEl = document.querySelector("body");
 buttonChangeEl.addEventListener("click", handleSubmit);
 
 function handleSubmit(event) {
-bodyEl.style.backgroundColor = `${getRandomHexColor()}`;
-  spanColorEl.textContent = `${getRandomHexColor()}`;
+  spanColorEl.textContent = bodyEl.style.backgroundColor = `${getRandomHexColor()}`;
 }
 
 function getRandomHexColor() {
